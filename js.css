@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+.top-bar {
+  background: #fff;
+  padding: 10px 5%;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-left a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-left a:hover {
+  color: #5a2a18;
+  transition: color 0.3s linear;
+}
+
+.logo {
+  width: 160px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right a {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.EXPRESSO {
+  width: auto;
+  height: 50px;
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CHOCOFFE SECTION */
+.choco-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f3f0;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.choco-text {
+padding-left: 10%;
+
+}
+
+.choco-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #4b1e00;
+}
+
+.choco-text p {
+  font-size: 1.5rem;
+  color: #4b1e00;
+}
+
+.choco-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+/* Coleções */
+.colecoes {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fceee6;
+  padding: 5px 0;
+}
+
+.colecoes-imagem img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.colecoes-texto {
+  flex: 1;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colecoes-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #4b1e00;
+}
+
+.colecoes-texto p {
+  font-size: 1.5rem;
+  color: #4b1e00;
+  line-height: 1.6;
+}
+
+/* Histórias */
+.historias {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.historias-texto {
+  flex: 1;
+  padding-left: 5%;
+}
+
+.historias-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #4b1e00;
+}
+
+.historias-texto p {
+  font-size: 1.5rem;
+  color: #4b1e00;
+}
+
+.historias-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.historias-imagens img {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+}
+
+/* Footer */
+.rodape {
+  background-color: #fff;
+  padding: 30px 5%;
+  text-align: center;
+}
+
+.redes img {
+  width: 150px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.pay img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.links {
+  margin: 15px 0;
+}
+
+.links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4b1e00;
+  font-weight: bold;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: #444;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-left, .nav-right {
+    justify-content: center;
+  }
+
+  .nav-left a, .nav-right a {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .choco-section, .colecoes, .historias {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .choco-text, .colecoes-texto, .historias-texto {
+    padding: 20px;
+  }
+
+  .historias-imagens {
+    justify-content: center;
+  }
+
+  .historias-imagens img {
+    width: 150px;
+    height: 230px;
+  }
+
+  .pay img {
+    position: static;
+    width: 180px;
+  }
+
+  .redes img {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-left a, .nav-right a {
+    font-size: 16px;
+  }
+
+  .choco-text h2, .colecoes-texto h2, .historias-texto h2 {
+    font-size: 2rem;
+  }
+
+  .choco-text p, .colecoes-texto p, .historias-texto p {
+    font-size: 1.2rem;
+  }
+
+  .historias-imagens img {
+    width: 120px;
+    height: 180px;
+  }
+}
